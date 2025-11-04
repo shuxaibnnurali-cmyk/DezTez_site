@@ -55,6 +55,7 @@
 }
 
 .card {
+    height: auto;
   --grad: red,green ;
   padding: 1.5rem;
   background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
@@ -69,7 +70,8 @@
     -20px 20px 40px hsl(0 0 0 / .25) ;
 }
 .title {
-    font-size: 1rem;
+    font-size: 1.2rem;
+     font-family: 'Harabara Mais Black', sans-serif;
     grid-area: title;
     align-self: centr;
     text-transform: uppercase;
@@ -88,6 +90,7 @@
     }
   }
   .content {
+      font-family: 'Harabara Mais Black', sans-serif;
     grid-area: content;
     & > *:first-child { margin-top: 0rem}
     & > *:last-child { margin-bottom: 0rem}
@@ -101,8 +104,9 @@
   }
 
 .tugma{
-    width: 50%;
+    width: 70%;
     height: 20%;
+    font-size: 1rem;
     background-color: #009846;
     border-radius: 1rem;
     color: white  ;
