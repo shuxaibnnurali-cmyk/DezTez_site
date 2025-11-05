@@ -3123,7 +3123,7 @@ textarea.form-control.is-invalid {
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
-    color: #555;
+    color: #fff;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -3162,14 +3162,14 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-    color: #E31E24  ;
+    color: #fff  ;
     background-color: #009846;
     border-color: #E31E24
 
 }
 
 .btn-primary:hover {
-    color: #E31E24;
+    color: #fff;
     background-color: #009846;
     border-color: #E31E24
 
@@ -3177,7 +3177,7 @@ fieldset:disabled .btn {
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
-    color: #E31E24
+    color: #ffff
 ;
     background-color: #009846;
     border-color: #E31E24;
