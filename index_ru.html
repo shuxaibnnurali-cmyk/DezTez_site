@@ -29,7 +29,6 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -37,6 +36,7 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
+
    <!-- Navbar Start -->
 <div class="container-fluid bg-light shadow-sm" style="position: fixed; top: 0; z-index: 1050; width: 100%;">
   <div class="container">
@@ -88,7 +88,7 @@
               Til
             </a>
             <div class="dropdown-menu text-center">
-              <a href="./index_ru.html" class="dropdown-item d-flex align-items-center justify-content-center">
+              <a href="#" class="dropdown-item d-flex align-items-center justify-content-center">
                 <img src="/img/flags/russia-flag.jpg" alt="RU" class="flag-icon me-1" style="width: 20px; height: 14px;"> ru
               </a>
               <a href="#" class="dropdown-item d-flex align-items-center justify-content-center">
@@ -103,191 +103,6 @@
   </div>
 </div>
 <!-- Navbar End -->
-
-<!-- 🎥 4 TA VIDEO CAROUSEL SECTION -->
-<section id="video-carousel" class="position-relative">
-  <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-
-    <div class="carousel-inner">
-
-      <!-- 1. DEZINFEKSIYA -->
-      <div class="carousel-item active">
-        <video class="d-block w-100" autoplay muted loop playsinline>
-          <source src="./video/disinsection.mp4" type="video/mp4">
-        </video>
-        <div class="overlay"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
-          <h1 class="animated-title mt-4">Dezinfeksiya Xizmatlari</h1>
-          <p class="animated-text mt-4">Virus va bakteriyalardan tozalash – sog‘lom hayot uchun zarur!</p>
-          <a href="#contact" class="btn btn-success px-4 py-2 rounded-pill mt-2">Bog‘lanish</a>
-        </div>
-      </div>
-
-      <!-- 2. DEZINSEKSIYA -->
-      <div class="carousel-item">
-        <video class="d-block w-100" autoplay muted loop playsinline>
-          <source src="./video/disinfection1.mp4" type="video/mp4">
-        </video>
-        <div class="overlay"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
-          <h1 class="animated-title">Dezinseksiya Xizmatlari</h1>
-          <p class="animated-text mt-4">Hasharotlardan xalos bo‘ling – xavfsiz va ishonchli usullar bilan!</p>
-          <a href="#contact" class="btn btn-success px-4 mt-4 py-2 rounded-pill">Bog‘lanish</a>
-        </div>
-      </div>
-
-      <!-- 3. DERATIZATSIYA -->
-      <div class="carousel-item">
-        <video class="d-block w-100" autoplay muted loop playsinline>
-          <source src="./video/fumigation.mp4" type="video/mp4">
-        </video>
-        <div class="overlay"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
-          <h1 class="animated-title mt-4">Deratizatsiya Xizmatlari</h1>
-          <p class="animated-text mt-4">Kemiruvchilarga qarshi samarali va ekologik xavfsiz yechimlar.</p>
-          <a href="#contact" class="btn btn-success px-4 mt-4 py-2 rounded-pill">Bog‘lanish</a>
-        </div>
-      </div>
-
-      <!-- 4. FUMIGATSIYA -->
-      <div class="carousel-item">
-        <video class="d-block w-100" autoplay muted loop playsinline>
-          <source src="./video/fumigation.mp4" type="video/mp4">
-        </video>
-        <div class="overlay"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
-          <h1 class="animated-title">Fumigatsiya Xizmatlari</h1>
-          <p class="animated-text mt-4">Ombor va konteynerlarda zararkunandalarga qarshi professional himoya.</p>
-          <a href="#contact" class="btn btn-success px-4 mt-4 py-2 rounded-pill">Bog‘lanish</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 🔘 CUSTOM TUGMALAR -->
-    <button class="video-prev-btn" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">❮</button>
-    <button class="video-next-btn" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">❯</button>
-
-  </div>
-</section>
-
-<!-- 💅 STYLE -->
-<style>
-#video-carousel {
-  position: relative;
-  overflow: hidden;
-}
-
-#video-carousel video {
-  height: 100vh;
-  object-fit: cover;
-  filter: brightness(100%);
-}
-
-/* Gradient overlay */
-#video-carousel .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Caption matnlar */
-#video-carousel .carousel-caption {
-  z-index: 3;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
-  pointer-events: none;
-}
-
-#video-carousel .carousel-caption .btn {
-  pointer-events: auto;
-}
-
-/* 🔘 Yangi tugmalar */
-.video-prev-btn,
-.video-next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.video-prev-btn:hover,
-.video-next-btn:hover {
-  background: rgba(0,0,0,0.8);
-}
-
-.video-prev-btn {
-  left: 20px;
-}
-
-.video-next-btn {
-  right: 20px;
-}
-
-/* Typing animatsiya */
-.animated-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #00a86b;
-  overflow: hidden;
-  border-right: .15em solid #00a86b;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 3s steps(30, end) forwards, blink .7s step-end infinite;
-}
-
-.animated-text {
-  opacity: 0;
-  animation: fadeIn 2s ease forwards;
-  animation-delay: 3s;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: #00a86b }
-}
-@keyframes fadeIn {
-  to { opacity: 1 }
-}
-
-/* 📱 Mobilga moslashtirish */
-@media (max-width: 768px) {
-  .animated-title {
-    font-size: 1.8rem;
-  }
-  .animated-text {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-  .btn {
-    font-size: 0.9rem;
-    padding: 8px 20px;
-  }
-  .video-prev-btn,
-  .video-next-btn {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-  }
-}
-</style>
-
 
 
 
